@@ -1,0 +1,22 @@
+.header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-top: 0.5rem;
+}
+
+.header-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.content-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
+}
+
+.content-main h1{
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+}
