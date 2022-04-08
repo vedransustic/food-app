@@ -1,18 +1,19 @@
 import './index.css'
+import BurgerFriesBanner from '../../img/burger-fries.png'
 import Image from "../../components/Image";
+
 
 const Banner = () => {
     return (
         <header className="header">
             <div className='header-content'>
-                <Image linkToImage={''} name={'logo'} className={'logo'}/>
                 <div className="content-main">
                     <h1>Delicius food for your cravings</h1>
-                    <p>We made fresh and healty meals with different recipes</p>
-                    <button> View menu <i className="fas fa-long-arrow-alt-right">h</i></button>
+                    <p>We made the best and freshest burgers with top rated recipes from around the world.</p>
+                    <button> View Menu <i className="fas fa-long-arrow-alt-right"/></button>
                 </div>
             </div>
-            <Image linkToImage={'https://pittsfieldcafe.com/wp-content/uploads/2014/12/extras.png'} name={'foodie-img'} className={'banner-image'}/>
+            <Image linkToImage={BurgerFriesBanner} name={'foodie-img'} className={'banner-image'}/>
         </header>
     );
 };

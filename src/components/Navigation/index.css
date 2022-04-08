@@ -1,0 +1,13 @@
+.navigation{
+    margin: 10px 10px;
+    display: flex;
+    justify-content: start;
+}
+
+@media (max-width: 768px){
+    .navigation{
+        margin: 2rem .8rem;
+        display: flex;
+        justify-content: start;
+    }
+}

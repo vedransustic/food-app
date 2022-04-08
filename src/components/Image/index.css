@@ -2,3 +2,9 @@
     width: 100%;
     align-self: center;
 }
+
+@media (max-width: 768px) {
+    .banner-image{
+        padding: 10px;
+    }
+}

@@ -6,12 +6,12 @@ import CartButton from "../../container/CartButton";
 
 const Home = () => {
     return (
-        <div>
+        <>
             <Banner/>
-            <Menu/>
+{/*            <Menu/>
             <Footer/>
-            <CartButton/>
-        </div>
+            <CartButton/>*/}
+        </>
     );
 };
 
