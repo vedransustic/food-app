@@ -1,0 +1,37 @@
+button {
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.5rem;
+    border: none;
+    outline: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    border-bottom-left-radius: 2rem;
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+}
+
+.add-card {
+    width: 100%;
+    margin-top: 0;
+    border-radius: 2rem;
+}
+
+@media (max-width: 768px){
+    button{
+        font-size: 1.2rem;
+        width: 50vw;
+        padding: 1rem 2rem;
+        margin: 2rem auto auto;
+    }
+
+    .add-card {
+        width: 100%;
+        margin-top: 0;
+        border-radius: 2rem;
+        justify-content: center;
+    }
+}

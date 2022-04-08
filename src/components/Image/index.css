@@ -3,6 +3,14 @@
     align-self: center;
 }
 
+.card-img{
+    height: 10rem;
+    margin-top: -5rem;
+    object-fit: contain;
+    justify-content: center;
+    align-items: center;
+}
+
 @media (max-width: 768px) {
     .banner-image{
         padding: 10px;

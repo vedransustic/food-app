@@ -1,0 +1,33 @@
+.card {
+    width: 240px;
+    height: 340px;
+    padding: 0 0.8rem 0.8rem 0.8rem;
+    background-color: #fff;
+    border-radius: 30px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    box-shadow: #000 .1rem .1rem 1rem;
+    margin-top: 2rem;
+}
+
+.card-content{
+    display: grid;
+    grid-template-rows: 2fr 1fr 1fr;
+}
+
+.head_desc-name {
+    text-align: center;
+    font-weight: 600;
+}
+
+.head_desc-info {
+    text-align: left;
+    font-weight: 500;
+    padding: 10px;
+}
+
+.foot_desc-price {
+    font-weight: 700;
+    font-size: 20px;
+}

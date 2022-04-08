@@ -7,9 +7,9 @@ import CartButton from "../../container/CartButton";
 const Home = () => {
     return (
         <>
-            <Banner/>
-{/*            <Menu/>
-            <Footer/>
+          <Banner/>
+          <Menu/>
+ {/*             <Footer/>
             <CartButton/>*/}
         </>
     );

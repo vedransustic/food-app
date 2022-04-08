@@ -27,24 +27,6 @@
     font-weight: 500;
 }
 
-.content-main button {
-    background-color: #000;
-    color: #fff;
-    display: flex;
-    width: 240px;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 1.5rem;
-    border: none;
-    outline: none;
-    font-size: 1.5rem;
-    cursor: pointer;
-    margin-top: 2.5rem;
-    border-bottom-left-radius: 2rem;
-    border-top-left-radius: 2rem;
-    border-top-right-radius: 2rem;
-}
-
 @media (max-width: 768px){
     .header {
         display: flex;
@@ -66,12 +48,5 @@
     .content-main p{
         font-size: 1rem;
         text-align: justify;
-    }
-
-    .content-main button{
-        font-size: 1.2rem;
-        width: 50vw;
-        padding: .5rem 1rem;
-        margin: 2rem auto auto;
     }
 }
