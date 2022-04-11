@@ -5,15 +5,14 @@
     background-color: #fff;
     border-radius: 30px;
     text-align: center;
-    display: flex;
-    flex-direction: column;
     box-shadow: #000 .1rem .1rem 1rem;
     margin-top: 2rem;
 }
 
 .card-content{
     display: grid;
-    grid-template-rows: 2fr 1fr 1fr;
+    min-height: 240px;
+    grid-template-rows: 4fr 1fr 1fr;
 }
 
 .head_desc-name {
@@ -25,6 +24,7 @@
     text-align: left;
     font-weight: 500;
     padding: 10px;
+    color: gray;
 }
 
 .foot_desc-price {

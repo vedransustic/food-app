@@ -2,6 +2,7 @@ import React from 'react';
 import './index.css'
 import Image from "../Image";
 import Button from "../Button";
+import AddRemoveButton from "../AddRemoveItem";
 
 const MenuCardItem = ({name, info, price, img}) => {
     return (
@@ -15,7 +16,7 @@ const MenuCardItem = ({name, info, price, img}) => {
                     </p>
                 </div>
                 <span className='foot_desc-price'>{parseFloat(price).toFixed(2)} kn</span>
-                <Button text='Add +' className='add-card'/>
+                <AddRemoveButton quantity={1}/>
             </div>
 
         </div>

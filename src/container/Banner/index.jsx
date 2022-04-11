@@ -11,7 +11,7 @@ const Banner = () => {
                 <div className="content-main">
                     <h1>Delicius food for your cravings</h1>
                     <p>We made the best and freshest burgers with top rated recipes from around the world.</p>
-                    <Button displayFas={true} text='View Menu' faClassName='fas fa-long-arrow-alt-right'/>
+                    <Button className='banner-button' displayFas={true} text='View Menu' faClassName='fas fa-long-arrow-alt-right'/>
                 </div>
             </div>
             <Image linkToImage={BurgerFriesBanner} name={'foodie-img'} className={'banner-image'}/>

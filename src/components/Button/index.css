@@ -14,6 +14,10 @@ button {
     border-top-right-radius: 2rem;
 }
 
+.banner-button {
+    width: 300px;
+}
+
 .add-card {
     width: 100%;
     margin-top: 0;
