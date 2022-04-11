@@ -10,7 +10,8 @@ const Home = () => {
             <Banner/>
 {/*            <Menu/>
             <Footer/>
-            <CartButton/>*/}
+            */}
+            <CartButton/>
         </>
     );
 };
