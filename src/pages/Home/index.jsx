@@ -1,14 +1,12 @@
 import './index.css'
 import Banner from "../../container/Banner";
 import Menu from "../../container/Menu";
-import CartButton from "../../container/CartButton";
 
-const Home = () => {
+const Home = ({list}) => {
     return (
         <>
             <Banner/>
-            <Menu/>
-            <CartButton/>
+            <Menu list={ list }/>
         </>
     );
 };

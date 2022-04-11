@@ -1,13 +1,11 @@
-import './index.css'
-import { menuItemData } from "../../const";
 import MenuCardItem from "../../components/MenuCardItem";
 import './index.css'
 
-const Menu = () => {
+const Menu = ({list}) => {
     return (
         <main>
             {
-                menuItemData.map(item => <MenuCardItem key={item.id} {...item} />)
+                list.map(item => <MenuCardItem key={item.id} {...item} />)
             }
         </main>
     );

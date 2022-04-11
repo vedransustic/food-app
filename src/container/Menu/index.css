@@ -4,6 +4,7 @@ main {
     justify-items: center;
     grid-row-gap: 5rem;
     margin-top: 10rem;
+    margin-bottom: 5rem;
 }
 
 @media(max-width: 935px) {

@@ -15,7 +15,7 @@ const MenuCardItem = ({name, info, price, img}) => {
                         <small> {info} </small>
                     </p>
                 </div>
-                <span className='foot_desc-price'>{parseFloat(price).toFixed(2)} kn</span>
+                <span className='foot_desc-price'>{parseFloat(price).toFixed(2)} $</span>
                 <AddRemoveButton quantity={1}/>
             </div>
 
