@@ -8,7 +8,7 @@
     width: 60px;
 }
 
-.logo-text {
+.logo-text, .logo-text:focus, .logo-text:active, .logo-text:hover {
     font-size: 1.2rem;
     font-weight: 800;
     text-align: center;

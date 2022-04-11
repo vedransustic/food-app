@@ -1,7 +1,6 @@
 import './index.css'
 import Banner from "../../container/Banner";
 import Menu from "../../container/Menu";
-import Footer from "../../components/Footer";
 import CartButton from "../../container/CartButton";
 
 const Home = () => {
@@ -9,7 +8,6 @@ const Home = () => {
         <>
             <Banner/>
             <Menu/>
-            <Footer/>
             <CartButton/>
         </>
     );
