@@ -4,10 +4,13 @@ import Image from "../../components/Image";
 import EmptyCart from '../../img/EmptyCart.png'
 import Button from "../../components/Button";
 import {Link} from "react-router-dom";
+import {createStructuredSelector} from "reselect";
+import {selectCartItems, selectCartItemsCount, selectCartTotal} from "../../redux/selectors/cartSelector";
+import {connect} from "react-redux";
 
-const Cart = ({list}) => {
+const Cart = ({cartCount, cartList, cartTotal}) => {
 
-    if(!list.length){
+    if(!cartCount){
         return(
             <>
                 <div className="order empty">
@@ -27,14 +30,20 @@ const Cart = ({list}) => {
                 <h1 className="orders-heading">Your Orders
                 </h1>
                 <div className="orders-menu">
-                    <Menu list={list}/>
+                    <Menu list={cartList}/>
                 </div>
                 <h3 className="orders-total">
-                    Total: 120 $
+                    Total: {cartTotal} $
                 </h3>
             </div>
         </>
     );
 };
 
-export default Cart;
+const mapStateToProps = createStructuredSelector({
+    cartCount: selectCartItemsCount,
+    cartList: selectCartItems,
+    cartTotal: selectCartTotal
+})
+
+export default connect(mapStateToProps)(Cart);

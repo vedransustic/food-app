@@ -5,7 +5,7 @@ const Menu = ({list}) => {
     return (
         <main>
             {
-                list.map(item => <MenuCardItem key={item.id} {...item} />)
+                list.map(item => <MenuCardItem key={item.id} item={item} />)
             }
         </main>
     );
