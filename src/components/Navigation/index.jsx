@@ -1,7 +1,7 @@
-import React from 'react';
-import Logo from "../Logo";
+import { memo } from "react";
+import { Logo } from "../";
+import { CartButton } from "../../container";
 import './index.css'
-import CartButton from "../../container/CartButton";
 
 const Navigation = () => {
     return (
@@ -12,4 +12,4 @@ const Navigation = () => {
     );
 };
 
-export default Navigation;
+export default memo(Navigation);

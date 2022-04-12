@@ -1,8 +1,8 @@
+import { Banner } from "../../components";
+import { Menu } from "../../container";
 import './index.css'
-import Banner from "../../container/Banner";
-import Menu from "../../container/Menu";
 
-const Home = ({list}) => {
+const Home = ({ list }) => {
     return (
         <>
             <Banner/>

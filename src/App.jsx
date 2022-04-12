@@ -1,12 +1,10 @@
-import React from "react";
-import "./App.css";
 import Home from "./pages/Home";
-import Navigation from "./components/Navigation";
-import { Routes, Route } from "react-router-dom";
 import Cart from "./pages/Cart";
-import Menu from "./container/Menu";
-import Footer from "./components/Footer";
+import { Menu } from "./container";
+import { Navigation, Footer } from "./components";
+import { Routes, Route } from "react-router-dom";
 import { menuItemData } from "./const";
+import "./App.css";
 
 const shuffledItems = menuItemData.sort(() => 0.5 - Math.random());
 const menuItems = shuffledItems.slice(0, 3);

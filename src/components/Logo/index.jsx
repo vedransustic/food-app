@@ -1,8 +1,8 @@
-import React from 'react';
-import Image from "../Image";
-import LogoImg from '../../img/logo.png'
-import './index.css'
+import { memo } from "react";
 import { Link } from "react-router-dom";
+import { Image } from "../";
+import './index.css'
+import LogoImg from '../../img/logo.png'
 
 const Logo = () => {
     return (
@@ -15,4 +15,4 @@ const Logo = () => {
     );
 };
 
-export default Logo;
+export default memo(Logo);
