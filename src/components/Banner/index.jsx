@@ -1,9 +1,8 @@
+import { memo } from 'react';
+import { Link } from "react-router-dom";
+import { Image, Button } from "../";
 import './index.css'
 import BurgerFriesBanner from '../../img/BurgerFries.png'
-import Image from "../../components/Image";
-import Button from "../../components/Button";
-import {Link} from "react-router-dom";
-
 
 const Banner = () => {
     return (
@@ -13,7 +12,7 @@ const Banner = () => {
                     <h1>Delicius food for your cravings</h1>
                     <p>We made the best and freshest burgers with top rated recipes from around the world.</p>
                     <Link to='/menu' style={{textDecoration: 'inherit', color: "inherit"}}>
-                        <Button className='banner-button' displayFas={true} text='View Menu' faClassName='fas fa-long-arrow-alt-right'/>
+                        <Button className='to-menu-button' displayFas={true} text='View Menu' faClassName='fas fa-long-arrow-alt-right'/>
                     </Link>
                     </div>
             </div>
@@ -22,4 +21,4 @@ const Banner = () => {
     );
 };
 
-export default Banner;
+export default memo(Banner);

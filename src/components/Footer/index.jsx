@@ -1,5 +1,5 @@
-import React from 'react';
-import Logo from "../Logo";
+import { memo } from 'react';
+import { Logo } from "../";
 import './index.css'
 
 const Footer = () => {
@@ -11,4 +11,4 @@ const Footer = () => {
     );
 };
 
-export default Footer;
+export default memo(Footer);

@@ -1,11 +1,13 @@
-import MenuCardItem from "../../components/MenuCardItem";
+import { MenuCardItem } from "../";
 import './index.css'
+import {useMemo} from "react";
 
-const Menu = ({list}) => {
+const Menu = ({ list }) => {
+    const listedItems = useMemo(() => list, [list])
     return (
         <main>
             {
-                list.map(item => <MenuCardItem key={item.id} {...item} />)
+                listedItems.map(item => <MenuCardItem key={item.id} item={item} />)
             }
         </main>
     );
