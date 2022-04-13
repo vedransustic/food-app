@@ -1,4 +1,4 @@
-import { memo, useCallback } from "react";
+import { useCallback, useMemo } from "react";
 import { Image, AddRemoveButtom } from "../../components";
 import { connect} from "react-redux";
 import { createStructuredSelector } from "reselect";
@@ -23,7 +23,8 @@ const MenuCardItem = ({item, cartList, cartCount, cartAddItem, cartRemoveItem}) 
         }
         return quantity
     },[cartCount, cartList, id])
-
+    return (
+    useMemo(() => {
         return (
             <div className='card'>
                 <Image name='food' linkToImage={img} className='card-img'/>
@@ -41,9 +42,10 @@ const MenuCardItem = ({item, cartList, cartCount, cartAddItem, cartRemoveItem}) 
                         handleRemoveItem={handleRemoveItem}
                     />
                 </div>
-    
+
             </div>
         );
+    }, [handleAddItem, handleItemQuantity, handleRemoveItem, img, info, name, price]))
 };
 
 const mapStateToProps = createStructuredSelector({
@@ -56,4 +58,4 @@ const mapDispatchToProps = dispatch => ({
     cartRemoveItem: item => dispatch(cartRemoveItem(item))
 })
 
-export default connect(mapStateToProps, mapDispatchToProps)(memo(MenuCardItem));
+export default connect(mapStateToProps, mapDispatchToProps)(MenuCardItem);

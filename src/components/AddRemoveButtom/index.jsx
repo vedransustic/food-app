@@ -3,7 +3,6 @@ import './index.css'
 
 const AddRemoveButton = ({ quantity, handleAddItem, handleRemoveItem }) => {
     return useMemo(() => {
-        console.log('WDA')
         return (
             <div className='btnAddRemove'>
                 {
