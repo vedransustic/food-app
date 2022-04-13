@@ -24,6 +24,11 @@ button {
     border-radius: 2rem;
 }
 
+.cart-button {
+    width: 250px;
+    margin: 3rem auto;
+}
+
 @media (max-width: 768px){
     button{
         font-size: 1.2rem;

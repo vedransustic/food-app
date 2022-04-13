@@ -8,10 +8,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    position: fixed;
-    top: 1.5rem;
     cursor: pointer;
-    right: 1rem;
+    position: fixed;
+    top: 2rem;
+    right: 5rem;
 }
 
 .btnCartCount i {
@@ -32,4 +32,18 @@
     justify-content: center;
     align-items: center;
     font-weight: 500;
+}
+
+@media (max-width: 1024px) {
+    .btnCartCount {
+        top: 3rem;
+        right: 5rem;
+    }
+}
+
+@media (max-width: 765px) {
+    .btnCartCount {
+        top: 7rem;
+        right: 2rem;
+    }
 }

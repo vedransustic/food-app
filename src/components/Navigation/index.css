@@ -1,7 +1,7 @@
 .navigation{
     margin: 10px 10px;
     display: flex;
-    justify-content: start;
+    justify-content: space-between;
 }
 
 @media (max-width: 768px){
